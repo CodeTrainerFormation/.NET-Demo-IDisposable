@@ -12,26 +12,25 @@ namespace Disposable
         {
             LogFileWriter log = new LogFileWriter();
 
-            //-----1ere solution-----
+            //-----1st solution-----
             //LogFileWriter log = new LogFileWriter();
 
             //try
             //{
-            //    //utiliser l'objet log
+            //    //you can use log object here
             //}
             //finally
             //{
-            //    //liberation des ressources managées
-            //    //et non managées
+            //    //free managed and unmanaged resources
             //    log.Dispose();
             //}
 
-            //-----2eme solution-----
+            //-----2nd solution-----
             //using (LogFileWriter log = new LogFileWriter())
             //{
-            //    //utiliser l'objet log
-
-            //}//appel implicite à Dispose()
+            //    //you can use log object here
+            //
+            //}//implicit call Dispose() method
 
             Console.ReadLine();
         }

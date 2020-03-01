@@ -27,14 +27,14 @@ namespace Disposable
             {
                 if (isDisposing)
                 {
-                    // Nettoyage ressources managées;
+                    // Clean here your managed resources
                 }
 
-                // Nettoyage ressources non managées;
+                // Clean here your unmanaged resources
 
                 isDisposed = true;
 
-                //base.Dispose(isDisposing); //uniquement si l'objet hérite d'un autre objet disposable
+                //base.Dispose(isDisposing); //only if inherits from IDisposable object
             }
         }
     }
